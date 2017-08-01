@@ -1,0 +1,22 @@
+<view class="detail-container">
+	<view>
+		<image class="head-img" src="{{postData.headImgSrc}}"></image>
+		<image class="audio" src="{{isPlay?'/images/music/music-stop.png':'/images/music/music-start.png'}}" catchtap="onMusicPlay"></image>
+	</view>
+	<view class="author-date">
+		<image class="avatar" src="{{postData.avatar}}"></image>
+		<text class="author">{{postData.author}}</text>
+		<text class="const_text">发表于</text>
+		<text class="date">{{postData.dateTime}}</text>
+	</view>
+	<text class="title">{{postData.title}}</text>
+	<view class="tool">
+		<image wx:if="{{collected}}" src="/images/icon/collection.png" catchtap="onCollectTap"></image>
+		<image wx:else src="/images/icon/collection-anti.png" catchtap="onCollectTap"></image>
+		<image src="/images/icon/share.png" catchtap="onShareTap"></image>
+		<view class="line"></view>
+	</view>
+	<view class="content">
+		{{postData.detail}}
+	</view>
+</view>

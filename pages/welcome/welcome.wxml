@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="userinfo-avatar" src="/images/avatar/1.png"></image>
+  <text class="userinfo-nickname">Hellow</text>
+  <view class="motto">
+    <text class="user-motto">进入小程序</text>
+  </view>
+</view>
+
